@@ -1,0 +1,89 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  
+}
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#item1,#item2,#item3 {
+  
+  border: 1px solid black;
+  background-color: #DDFF08 ;
+  width: 95%;
+  height: 170px;
+  padding: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  color: black;
+  position: relative;
+}
+
+
+#dish1,#dish2,#dish3 {
+  border: 1px solid black;
+  position: absolute;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:white;
+  font-size: 1.3em;
+  top:0;
+  right:0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+} 
+#dish1 {
+  background-color: blue ; 
+}
+#dish2 {
+  background-color: maroon ; 
+}
+#dish3 {
+  background-color: red ; 
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  .col-lg-4 {
+    width: 33.3%;
+  }
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-td-1, .col-td-2, .col-td-3, .col-td-4, .col-td-5, .col-td-6, .col-td-7, .col-td-8, .col-td-9, .col-td-10, .col-td-11, .col-td-12 {
+    float: left;
+  }
+  .col-td-6 {
+    width: 50%;
+  }
+  .col-td-12 {
+    width: 100%;
+  }
+}
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
